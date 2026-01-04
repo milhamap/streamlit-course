@@ -12,12 +12,12 @@ def login():
     st.markdown(f"""
         <img src="{logo_url}" class="Logo">
     """, unsafe_allow_html=True)
-    st.title("Hello, Sobat MinClub!!!", text_alignment="center")
+    st.title("Hello, Sobat MinClub!", text_alignment="center")
     st.caption("Please enter your details to log in to your account.", text_alignment="center")
     username = st.text_input("Username", placeholder="Input your Username")
     password = st.text_input("Password", type="password", placeholder="••••••••")
     
-    if st.button("Login", use_container_width=True):
+    if st.button("Login", type="secondary"):
         if username == "admin" and password == "digistarclub2026":
             st.session_state.authenticated = True
             now = datetime.now()

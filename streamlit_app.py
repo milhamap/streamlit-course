@@ -12,7 +12,7 @@ def login():
     st.markdown(f"""
         <img src="{logo_url}" class="Logo">
     """, unsafe_allow_html=True)
-    st.title("Hello, Sobat MinClub!", text_alignment="center")
+    st.title("Hello, Sobat MinClub!!!", text_alignment="center")
     st.caption("Please enter your details to log in to your account.", text_alignment="center")
     username = st.text_input("Username", placeholder="Input your Username")
     password = st.text_input("Password", type="password", placeholder="••••••••")
@@ -108,8 +108,8 @@ else:
             st.session_state.messages = []
             st.rerun()
 
-    st.write("### Digistar Chat Assistant")
-    st.caption("Digistar Chat Assistant is an AI that helps members get information about Digistar Club.")
+    st.write("### Digistar Assistant")
+    st.caption("Digistar Assistant is an AI that helps members get information about Digistar Club.")
 
     client = InferenceClient(
         model="meta-llama/Llama-3.1-8B-Instruct",

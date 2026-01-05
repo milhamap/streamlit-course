@@ -28,7 +28,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-    - name: Commit & push changes (if any)
+    - name: Commit & push changes
       run: |
         if git status --porcelain | grep .; then
           git config user.name "github-actions"
